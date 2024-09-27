@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./flipCard.css">
+</head>
+<body>
+    <div class="flip-card">
+        <div class="flip-inner">
+            <div class="flip-fr">
+                #1<br/>
+                내 부모님과 나는 선물을 잘 안 주고받아
+            </div>
+            <div class="flip-ba">
+                #1<br/>
+                My parents and I hardly exchange gifts
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    const flipInner = document.querySelector(".flip-inner");
+    flipInner.addEventListener('click', () => {
+        flipInner.classList.toggle('fliping');
+    });
+</script>
